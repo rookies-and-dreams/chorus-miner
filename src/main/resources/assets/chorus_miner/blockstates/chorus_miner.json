@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "chorus_miner:block/chorus_miner"
+    },
+    "facing=south": {
+      "model": "chorus_miner:block/chorus_miner",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "chorus_miner:block/chorus_miner",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "chorus_miner:block/chorus_miner",
+      "y": 270
+    }
+  }
+}

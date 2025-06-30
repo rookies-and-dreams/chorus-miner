@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "XBX",
+    "BoB",
+    "###"
+  ],
+  "key": {
+    "o": {
+      "item": "minecraft:ender_eye"
+    },
+    "X": {
+      "item": "minecraft:chorus_fruit"
+    },
+    "B": {
+      "item": "minecraft:purpur_block"
+    },
+    "#": {
+      "item": "minecraft:end_stone"
+    }
+  },
+  "result": {
+    "item": "chorus_miner:chorus_miner"
+  }
+}
