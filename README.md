@@ -38,9 +38,11 @@ Here are the drop odds when breaking an Ender Geode:
 
 ## Q&A
 **Can I use it in a modpack, project, video, etc.?**
+
 Feel free to! Credit where possible and when due. If this mod can provide value to you, your friends and future users of your modpack, enjoy its inclusion, happy mining!
 
 **Can I contribute?**
+
 Contributions and help is always welcome! Although this mod was built with vanilla+ flavors in mind, future developments could include:
 
  - Support for older and newer Minecraft and Forge versions
