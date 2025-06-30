@@ -45,7 +45,9 @@ Feel free to! Credit where possible and when due. If this mod can provide value 
 
 Contributions and help is always welcome! Although this mod was built with vanilla+ flavors in mind, future developments could include:
 
- - Support for older and newer Minecraft and Forge versions
+ - Support for older and newer Minecraft versions
+ - Support for older and newer Forge versions
+ - Support for other mod loaders
  - Support for redstone and automated contraptions
  - Support and compatibility with other mods
  - New features allowing players to obtain different resources
