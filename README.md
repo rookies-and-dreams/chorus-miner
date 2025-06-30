@@ -4,9 +4,11 @@ Chorus Miner is a Minecraft mod, originally developped for version 1.20.1 using 
 
 ## How to use
 A **Chorus Miner** can be crafted with the following recipe:
+
 ![image](https://github.com/user-attachments/assets/28143d09-642c-46b9-b417-0810dbfbbf59)
 
 Once crafted, it can be used much like other block entities. Feed it Chorus Fruit and watch it cook!
+
 ![image](https://github.com/user-attachments/assets/22a0e566-b5aa-424e-8fa5-4f937508747a)
 
 
