@@ -4,11 +4,13 @@ Chorus Miner is a Minecraft mod, originally developped for version 1.20.1 using 
 
 ## How to use
 A **Chorus Miner** can be crafted with the following recipe:
+![image](https://github.com/user-attachments/assets/28143d09-642c-46b9-b417-0810dbfbbf59)
 
-Once crafted, it can be used much like other block entities:
+Once crafted, it can be used much like other block entities. Feed it Chorus Fruit and watch it cook!
+![image](https://github.com/user-attachments/assets/22a0e566-b5aa-424e-8fa5-4f937508747a)
+
 
 An **Ender Geode** will be produced once **16** **Chorus Fruit** have been consumed. **Ender Geodes** stack up to **16**, so make sure you pull them out of there every once in a while!  
-
 
 Though Chorus Fruit can be difficult to acquire, there are ways around this - https://minecraft.fandom.com/wiki/Tutorials/Chorus_fruit_farming
 
