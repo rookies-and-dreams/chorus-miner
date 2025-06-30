@@ -11,11 +11,16 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.items.SlotItemHandler;
-import org.jetbrains.annotations.Nullable;
 
 public class ChorusMinerMenu extends AbstractContainerMenu {
 
     public final ChorusMinerBlockEntity blockEntity;
+
+    private final int INPUT_HANDLER_X = 44;
+    private final int INPUT_HANDLER_Y = 20;
+    private final int OUTPUT_HANDLER_X = 80;
+    private final int OUTPUT_HANDLER_Y = 64;
+
     private final Level level;
     private final ContainerData data;
 
@@ -34,8 +39,8 @@ public class ChorusMinerMenu extends AbstractContainerMenu {
         addPlayerHotbar(inv);
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, 44, 20));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 80, 64));
+            this.addSlot(new SlotItemHandler(iItemHandler, 0, INPUT_HANDLER_X, INPUT_HANDLER_Y));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, OUTPUT_HANDLER_X, OUTPUT_HANDLER_Y));
         });
 
         addDataSlots(data);
