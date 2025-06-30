@@ -1,0 +1,63 @@
+# === Java Build and IDE ===
+.gradle/
+build/
+out/
+bin/
+*.log
+*.class
+*.jar
+
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+
+# === Eclipse ===
+.classpath
+.project
+.settings/
+
+# === VS Code ===
+.vscode/
+
+# === OS Generated Files ===
+.DS_Store
+Thumbs.db
+
+# === Minecraft Specific ===
+run/
+run_client/
+run_server/
+logs/
+config/
+crash-reports/
+debug/
+*.lck
+*.lock
+
+# === Gradle Wrapper Logs and Caches ===
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+.gradle/caches/
+.gradle/daemon/
+.gradle/native/
+.gradle/notifications/
+.gradle/wrapper/
+gradle-app.setting
+gradle.properties
+
+# === User Custom Files ===
+/local.properties
+/private.properties
+
+# === Forge MDK Downloads ===
+/libraries/
+
+# === Environment and Secrets ===
+*.env
+.env
+*.env.*
+secrets.properties
+
+# === Misc ===
+*.swp
+*.swo
