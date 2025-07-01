@@ -51,6 +51,6 @@ Contributions and help is always welcome! Although this mod was built with vanil
  - Support for redstone and automated contraptions
  - Support and compatibility with other mods
  - New features allowing players to obtain different resources
- - Visual improvements for the station, items, or GUI
+ - Visual and audio improvements for the station, items, or GUI
 
 You can contact me on Discord to discuss the topic whenever - @meteox
