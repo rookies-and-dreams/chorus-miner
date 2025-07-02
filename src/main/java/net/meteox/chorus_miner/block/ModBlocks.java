@@ -1,7 +1,6 @@
 package net.meteox.chorus_miner.block;
 
 import net.meteox.chorus_miner.ChorusMiner;
-import net.meteox.chorus_miner.block.custom.ChorusMinerBlock;
 import net.meteox.chorus_miner.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
