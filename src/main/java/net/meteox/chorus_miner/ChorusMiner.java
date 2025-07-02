@@ -2,11 +2,14 @@ package net.meteox.chorus_miner;
 
 import com.mojang.logging.LogUtils;
 import net.meteox.chorus_miner.block.ModBlocks;
-import net.meteox.chorus_miner.block.custom.ModBlockEntities;
+import net.meteox.chorus_miner.block.entity.ModBlockEntities;
+import net.meteox.chorus_miner.entity.ModEntity;
+import net.meteox.chorus_miner.entity.ModEntityRenderers;
 import net.meteox.chorus_miner.item.ModCreativeModeTabs;
 import net.meteox.chorus_miner.item.ModItems;
 import net.meteox.chorus_miner.screen.ChorusMinerScreen;
 import net.meteox.chorus_miner.screen.ModMenuTypes;
+import net.meteox.chorus_miner.sound.ModSounds;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -40,6 +43,9 @@ public class ChorusMiner
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
+        ModEntity.register(modEventBus);
+
+        ModSounds.SOUND_EVENTS.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -49,6 +55,8 @@ public class ChorusMiner
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
+        MinecraftForge.EVENT_BUS.addListener(ModEntityRenderers::registerRenderers);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

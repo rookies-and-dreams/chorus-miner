@@ -1,7 +1,7 @@
 package net.meteox.chorus_miner.screen;
 
 import net.meteox.chorus_miner.block.ModBlocks;
-import net.meteox.chorus_miner.block.custom.ChorusMinerBlockEntity;
+import net.meteox.chorus_miner.block.entity.ChorusMinerBlockEntity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;

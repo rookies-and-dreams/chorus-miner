@@ -1,8 +1,7 @@
-package net.meteox.chorus_miner.block.custom;
+package net.meteox.chorus_miner.block;
 
-import net.meteox.chorus_miner.ChorusMiner;
-import net.meteox.chorus_miner.block.custom.ChorusMinerBlockEntity;
-import net.meteox.chorus_miner.block.custom.ModBlockEntities;
+import net.meteox.chorus_miner.block.entity.ChorusMinerBlockEntity;
+import net.meteox.chorus_miner.block.entity.ModBlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;

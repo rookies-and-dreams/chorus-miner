@@ -1,0 +1,6 @@
+{
+  "item.ender_geode.break": {
+    "category": "player",
+    "sounds": ["chorus_miner:ender_geode/break"]
+  }
+}

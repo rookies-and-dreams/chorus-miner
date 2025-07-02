@@ -1,4 +1,4 @@
-package net.meteox.chorus_miner.block.custom;
+package net.meteox.chorus_miner.block.entity;
 
 import net.meteox.chorus_miner.ChorusMiner;
 import net.meteox.chorus_miner.block.ModBlocks;

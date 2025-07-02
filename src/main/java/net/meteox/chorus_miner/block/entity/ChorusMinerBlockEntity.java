@@ -1,15 +1,11 @@
-package net.meteox.chorus_miner.block.custom;
+package net.meteox.chorus_miner.block.entity;
 
-import com.mojang.serialization.MapCodec;
-import net.meteox.chorus_miner.block.ModBlocks;
 import net.meteox.chorus_miner.item.ModItems;
 import net.meteox.chorus_miner.screen.ChorusMinerMenu;
-import net.meteox.chorus_miner.screen.ChorusMinerScreen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.Container;
 import net.minecraft.world.Containers;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
@@ -29,8 +25,6 @@ import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-
-import static net.meteox.chorus_miner.block.ModBlocks.BLOCKS;
 
 public class ChorusMinerBlockEntity extends BlockEntity implements MenuProvider {
     private static final int INPUT_SLOT = 0;
