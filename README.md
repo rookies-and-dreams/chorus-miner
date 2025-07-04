@@ -66,7 +66,6 @@ Contributions and help is always welcome! Although this mod was built with vanil
  - Support for older and newer Minecraft versions
  - Support for older and newer Forge versions
  - Support for other mod loaders
- - Support for redstone and automated contraptions
  - Support and compatibility with other mods
  - New features allowing players to obtain different resources
  - Visual and audio improvements for the station, items, or GUI
