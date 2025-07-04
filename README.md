@@ -18,22 +18,40 @@ Though Chorus Fruit can be difficult to acquire, there are ways around this - ht
 
 ## LET'S GO GAMBLING
 Here are the drop odds when breaking an Ender Geode:
-| Pool Name        | Rolls | Chance | Item              | Odds in Pool | Count Range |
-|------------------|-------|--------|-------------------|--------------|-------------|
-| **Coal**         | 1     | 100%   | Coal              | —            | 6 – 18      |
-| **Ore**          | 1     | 100%   | Raw Iron          | 40%          | 3 – 12      |
-|                  |       |        | Raw Copper        | 40%          | 3 – 12      |
-|                  |       |        | Raw Gold          | 20%          | 1 – 3       |
-| **Ender Pearl**  | 1     | 50%    | Ender Pearl       | —            | 1 – 4       |
-| **Rare Block**   | 1     | 50%    | Coal Block        | 60%          | 1           |
-|                  |       |        | Iron Block        | 20%          | 1           |
-|                  |       |        | Gold Block        | 10%          | 1           |
-|                  |       |        | Diamond Block     | 5%           | 1           |
-|                  |       |        | Ancient Debris    | 2%           | 1           |
-|                  |       |        | Netherite Scrap   | 2%           | 1           |
-|                  |       |        | Netherite Ingot   | 1%           | 1           |
-| **Lapis Lazuli** | 1     | 5%     | Lapis Lazuli      | —            | 4 – 32      |
-| **Diamond**      | 1     | 5%     | Diamond           | —            | 1 – 8       |
+
+### Coal - guaranteed
+
+| Item Name          | Per Roll (%) |
+| ------------------ | ------------ |
+| Coal Ore           | 100.00%      |
+
+### Ender pearls
+
+| Item Name          | Per Roll (%) |
+| ------------------ | ------------ |
+| Ender Pearl        | 25%, 1 to 4  |
+
+### Random special blocks 
+#### (1-3 random rolls)
+| Item Name          | Drop rate    |
+| ------------------ | ------------ |
+| Copper Ore         | 11.00%       |
+| Iron Ore           | 11.00%       |
+| Gold Ore           | 8.00%        |
+| Redstone Ore       | 8.00%        |
+| Lapis Lazuli Ore   | 8.00%        |
+| Emerald Ore        | 5.00%        |
+| Diamond Ore        | 4.00%        |
+| Copper Block       | 10.00%       |
+| Iron Block         | 10.00%       |
+| Gold Block         | 5.00%        |
+| Redstone Block     | 5.00%        |
+| Lapis Lazuli Block | 5.00%        |
+| Emerald Block      | 5.00%        |
+| Diamond Block      | 4.00%        |
+| Ancient Debris     | 1.00%        |
+
+---
 
 
 ## Q&A
