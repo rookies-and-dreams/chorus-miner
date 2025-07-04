@@ -15,6 +15,7 @@ import net.minecraftforge.items.SlotItemHandler;
 public class ChorusMinerMenu extends AbstractContainerMenu {
 
     public final ChorusMinerBlockEntity blockEntity;
+    private final ContainerLevelAccess access;
 
     private final int INPUT_HANDLER_X = 44;
     private final int INPUT_HANDLER_Y = 20;
@@ -31,17 +32,16 @@ public class ChorusMinerMenu extends AbstractContainerMenu {
     public ChorusMinerMenu(int pContainerId, Inventory inv, BlockEntity entity, ContainerData data) {
         super(ModMenuTypes.CHORUS_MINER_MENU.get(), pContainerId);
         checkContainerSize(inv, 2);
-        blockEntity = ((ChorusMinerBlockEntity) entity);
+        this.blockEntity = ((ChorusMinerBlockEntity) entity);
+        this.access = ContainerLevelAccess.create(blockEntity.getLevel(), blockEntity.getBlockPos());;
         this.level = inv.player.level();
         this.data = data;
 
         addPlayerInventory(inv);
         addPlayerHotbar(inv);
 
-        this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
-            this.addSlot(new SlotItemHandler(iItemHandler, 0, INPUT_HANDLER_X, INPUT_HANDLER_Y));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, OUTPUT_HANDLER_X, OUTPUT_HANDLER_Y));
-        });
+        this.addSlot(new SlotItemHandler(this.blockEntity.getItemHandler(), 0, INPUT_HANDLER_X, INPUT_HANDLER_Y));
+        this.addSlot(new SlotItemHandler(this.blockEntity.getItemHandler(), 1, OUTPUT_HANDLER_X, OUTPUT_HANDLER_Y));
 
         addDataSlots(data);
     }
@@ -120,8 +120,11 @@ public class ChorusMinerMenu extends AbstractContainerMenu {
 
     @Override
     public boolean stillValid(Player pPlayer) {
-        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, ModBlocks.CHORUS_MINER.get());
+        return access.evaluate((level, pos) -> {
+            BlockEntity be = level.getBlockEntity(pos);
+            return be instanceof ChorusMinerBlockEntity &&
+                    pPlayer.distanceToSqr(pos.getCenter()) <= 64.0;
+        }, true);
     }
 
     private void addPlayerInventory(Inventory playerInventory) {
