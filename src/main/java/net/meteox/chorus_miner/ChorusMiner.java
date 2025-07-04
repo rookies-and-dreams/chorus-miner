@@ -3,6 +3,7 @@ package net.meteox.chorus_miner;
 import com.mojang.logging.LogUtils;
 import net.meteox.chorus_miner.block.ModBlocks;
 import net.meteox.chorus_miner.block.entity.ModBlockEntities;
+import net.meteox.chorus_miner.entity.EnderGeodeDispenseBehavior;
 import net.meteox.chorus_miner.entity.ModEntity;
 import net.meteox.chorus_miner.entity.ModEntityRenderers;
 import net.meteox.chorus_miner.item.ModCreativeModeTabs;
@@ -12,12 +13,14 @@ import net.meteox.chorus_miner.screen.ModMenuTypes;
 import net.meteox.chorus_miner.sound.ModSounds;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.DispenserBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -61,7 +64,9 @@ public class ChorusMiner
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        event.enqueueWork(()-> {
+            DispenserBlock.registerBehavior(ModItems.ENDER_GEODE.get(), new EnderGeodeDispenseBehavior());
+        });
     }
 
     // Add the example block item to the building blocks tab
