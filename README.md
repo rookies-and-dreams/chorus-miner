@@ -12,7 +12,7 @@ Once crafted, it can be used much like other block entities. Feed it Chorus Frui
 ![image](https://github.com/user-attachments/assets/22a0e566-b5aa-424e-8fa5-4f937508747a)
 
 
-An **Ender Geode** will be produced once **16** **Chorus Fruit** have been consumed. **Ender Geodes** stack up to **16**, so make sure you pull them out of there every once in a while!  
+An **Ender Geode** will be produced once **8** **Chorus Fruit** have been consumed. **Ender Geodes** stack up to **16**, so make sure you pull them out of there every once in a while!  
 
 Though Chorus Fruit can be difficult to acquire, there are ways around this - https://minecraft.fandom.com/wiki/Tutorials/Chorus_fruit_farming
 
